@@ -129,7 +129,7 @@ const About = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="glassmorphism p-8 text-center card-hover">
-              <div className="text-green-500 p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 bg-sky-100">
+              <div className="text-blue-500 p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 bg-sky-100">
                 <BarChart3 size={28} />
               </div>
               <h3 className="text-xl mb-3 font-semibold text-gray-800">Performance First</h3>
@@ -139,7 +139,7 @@ const About = () => {
             </div>
             
             <div className="glassmorphism p-8 text-center card-hover">
-              <div className="text-green-500 p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 bg-sky-100">
+              <div className="text-blue-500 p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 bg-sky-100">
                 <Zap size={28} className="bg-sky-100" />
               </div>
               <h3 className="text-xl font-semibold mb-3 text-gray-800">1-Month Free Trial</h3>
@@ -149,7 +149,7 @@ const About = () => {
             </div>
             
             <div className="glassmorphism p-8 text-center card-hover">
-              <div className="text-green-500 p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 bg-sky-100">
+              <div className="text-blue-500 p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 bg-sky-100">
                 <Shield size={28} />
               </div>
               <h3 className="text-xl font-semibold mb-3 text-gray-800">No Upfront Payment</h3>
