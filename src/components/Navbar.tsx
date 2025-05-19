@@ -28,10 +28,7 @@ const Navbar = () => {
 
   const navLinks = [
     { name: 'Home', path: '/' },
-    { name: 'Services', path: '/services' },
-    { name: 'Blog', path: '/blog' },
-    { name: 'References', path: '/references' },
-    { name: 'Booking', path: '/booking' },
+    { name: 'About', path: '/about' },
   ];
 
   return (
@@ -43,12 +40,8 @@ const Navbar = () => {
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <NavLink to="/" className="flex items-center">
-          <div className="h-20 w-auto md:h-28 md:w-auto relative">
-            <img 
-              src="/lovable-uploads/5964f950-36a7-430c-a887-4eea91ad4973.png" 
-              alt="PSK Services Logo" 
-              className="h-full w-auto object-contain" 
-            />
+          <div className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-green-500">
+            AutoLead Systems
           </div>
         </NavLink>
 
@@ -68,6 +61,12 @@ const Navbar = () => {
               {link.name}
             </NavLink>
           ))}
+          <a 
+            href="#book-demo" 
+            className="bg-green-500 hover:bg-green-600 text-white font-medium py-2 px-4 rounded-lg text-sm transition-colors"
+          >
+            Book Free Demo
+          </a>
         </div>
 
         {/* Mobile Navigation Toggle */}
@@ -101,6 +100,12 @@ const Navbar = () => {
               {link.name}
             </NavLink>
           ))}
+          <a 
+            href="#book-demo" 
+            className="bg-green-500 hover:bg-green-600 text-white font-medium py-3 px-6 rounded-lg text-center mt-4"
+          >
+            Book Free Demo
+          </a>
         </div>
       </div>
     </nav>

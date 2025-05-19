@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -104,25 +105,18 @@
   .link-hover:hover::after {
     width: 100%;
   }
-}
 
-.calendar-container .react-calendar {
-  @apply glassmorphism border-green-500/10 p-4;
-}
-
-.calendar-container .react-calendar__tile--active {
-  @apply bg-green-500 text-white;
-}
-
-.calendar-container .react-calendar__tile--now {
-  @apply bg-green-500/10 text-green-500;
-}
-
-.calendar-container .react-calendar__navigation button:enabled:hover,
-.calendar-container .react-calendar__navigation button:enabled:focus,
-.calendar-container .react-calendar__tile:enabled:hover,
-.calendar-container .react-calendar__tile:enabled:focus {
-  @apply bg-green-500/10 text-white;
+  .animation-delay-100 {
+    animation-delay: 0.1s;
+  }
+  
+  .animation-delay-200 {
+    animation-delay: 0.2s;
+  }
+  
+  .animation-delay-300 {
+    animation-delay: 0.3s;
+  }
 }
 
 /* Custom scrollbar */
