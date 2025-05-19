@@ -16,7 +16,7 @@ const About = () => {
               About <span className="text-green-500">AutoLead Systems</span>
             </h1>
             
-            <p className="text-xl text-gray-300 max-w-2xl animate-fade-in animation-delay-100">
+            <p className="text-xl max-w-2xl animate-fade-in animation-delay-100 text-gray-700">
               Young innovators crafting effective marketing solutions for local businesses.
             </p>
           </div>
@@ -28,7 +28,7 @@ const About = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Meet Titus & Prahladh</h2>
-            <p className="text-gray-300 max-w-2xl mx-auto">
+            <p className="max-w-2xl mx-auto text-gray-600">
               Two 18-year-old marketers from Bangalore with a passion for technology and business growth.
             </p>
           </div>
@@ -101,7 +101,7 @@ const About = () => {
             
             <div className="md:w-1/2">
               <div className="glassmorphism p-8 rounded-xl h-full flex flex-col justify-center">
-                <div className="bg-green-500/10 text-green-500 p-4 w-16 h-16 flex items-center justify-center rounded-full mb-6">
+                <div className="text-green-500 p-4 w-16 h-16 flex items-center justify-center rounded-full mb-6 bg-sky-100">
                   <Zap size={28} className="bg-sky-100" />
                 </div>
                 <h3 className="text-2xl font-semibold text-white mb-4">Simple. Effective. Focused.</h3>
@@ -122,38 +122,38 @@ const About = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Work Ethic</h2>
-            <p className="text-gray-300 max-w-2xl mx-auto">
+            <p className="max-w-2xl mx-auto text-gray-700">
               We believe in putting our money where our mouth is. That's why we operate differently from traditional marketing agencies.
             </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="glassmorphism p-8 text-center card-hover">
-              <div className="bg-green-500/10 text-green-500 p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+              <div className="text-green-500 p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 bg-sky-100">
                 <BarChart3 size={28} />
               </div>
-              <h3 className="text-xl font-semibold text-white mb-3">Performance First</h3>
-              <p className="text-gray-300">
+              <h3 className="text-xl mb-3 font-semibold text-gray-800">Performance First</h3>
+              <p className="text-gray-600">
                 We focus on results that matter to your business - qualified leads and paying customers, not just clicks or impressions.
               </p>
             </div>
             
             <div className="glassmorphism p-8 text-center card-hover">
-              <div className="bg-green-500/10 text-green-500 p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <Zap size={28} />
+              <div className="text-green-500 p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 bg-sky-100">
+                <Zap size={28} className="bg-sky-100" />
               </div>
-              <h3 className="text-xl font-semibold text-white mb-3">1-Month Free Trial</h3>
-              <p className="text-gray-300">
+              <h3 className="text-xl font-semibold mb-3 text-gray-800">1-Month Free Trial</h3>
+              <p className="text-gray-600">
                 Start with a full month of free service. See the results before making any financial commitment.
               </p>
             </div>
             
             <div className="glassmorphism p-8 text-center card-hover">
-              <div className="bg-green-500/10 text-green-500 p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+              <div className="text-green-500 p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 bg-sky-100">
                 <Shield size={28} />
               </div>
-              <h3 className="text-xl font-semibold text-white mb-3">No Upfront Payment</h3>
-              <p className="text-gray-300">
+              <h3 className="text-xl font-semibold mb-3 text-gray-800">No Upfront Payment</h3>
+              <p className="text-gray-600">
                 We operate on a performance-based model. You only pay when we deliver results that grow your business.
               </p>
             </div>
@@ -166,19 +166,17 @@ const About = () => {
         <div className="max-w-7xl mx-auto">
           <div className="glassmorphism p-10 md:p-16 rounded-xl text-center">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6">Ready to Work With Us?</h2>
-            <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+            <p className="text-xl mb-8 max-w-2xl mx-auto text-gray-700">
               Get started with our no-risk, 1-month free trial and see the results for yourself.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-green-500 hover:bg-green-600 text-white font-medium py-6 px-8 rounded-lg transition-all duration-300 flex items-center justify-center text-lg btn-glow">
+              <Button size="lg" className="text-white font-medium py-6 px-8 rounded-lg transition-all duration-300 flex items-center justify-center text-lg btn-glow bg-blue-500 hover:bg-blue-400">
                 Book Free Demo
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
               
               <Link to="/">
-                <Button variant="outline" size="lg" className="bg-transparent border border-green-500 text-green-500 hover:bg-green-500/10 font-medium py-6 px-8 rounded-lg transition-all duration-300 flex items-center justify-center text-lg">
-                  Explore Our Services
-                </Button>
+                
               </Link>
             </div>
           </div>
