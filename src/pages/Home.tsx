@@ -48,7 +48,7 @@ const Home = () => {
               Turn Conversations into <span className="text-blue-500">Paying Customers</span> — On Autopilot
             </h1>
             
-            <p className="text-xl text-gray-300 max-w-2xl animate-fade-in animation-delay-100">
+            <p className="text-xl max-w-2xl animate-fade-in animation-delay-100 text-gray-800">
               We build AI-powered automation systems that generate leads 24/7 — no charge, no commitment.
             </p>
             
@@ -89,7 +89,7 @@ const Home = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Services We Offer</h2>
-            <p className="text-gray-300 max-w-2xl mx-auto">
+            <p className="max-w-2xl mx-auto text-gray-700">
               Comprehensive automation solutions tailored to your business needs.
             </p>
           </div>
