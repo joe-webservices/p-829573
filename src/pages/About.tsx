@@ -101,7 +101,7 @@ const About = () => {
             
             <div className="md:w-1/2">
               <div className="glassmorphism p-8 rounded-xl h-full flex flex-col justify-center">
-                <div className="text-green-500 p-4 w-16 h-16 flex items-center justify-center rounded-full mb-6 bg-sky-100">
+                <div className="text-blue-500 p-4 w-16 h-16 flex items-center justify-center rounded-full mb-6 bg-sky-100">
                   <Zap size={28} className="bg-sky-100" />
                 </div>
                 <h3 className="text-2xl font-semibold text-white mb-4">Simple. Effective. Focused.</h3>
