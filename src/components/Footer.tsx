@@ -1,8 +1,9 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
-import { Mail, Phone } from 'lucide-react';
+import React from "react";
+import { NavLink } from "react-router-dom";
+import { Mail, Phone } from "lucide-react";
 const Footer = () => {
-  return <footer className="bg-white border-t border-blue-100">
+  return (
+    <footer className="bg-white border-t border-blue-100">
       <div className="max-w-7xl mx-auto px-6 md:px-12 py-12 bg-sky-100">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Logo and Description */}
@@ -13,7 +14,8 @@ const Footer = () => {
               </h2>
             </div>
             <p className="text-gray-600 max-w-md">
-              We build AI-powered automation systems that generate leads 24/7 — no charge, no commitment.
+              We build AI-powered automation systems that generate leads 24/7 —
+              no charge, no commitment.
             </p>
           </div>
 
@@ -24,17 +26,28 @@ const Footer = () => {
             </h3>
             <ul className="space-y-2">
               <li>
-                <NavLink to="/" className="text-gray-600 hover:text-blue-600 transition-colors">
+                <NavLink
+                  to="/"
+                  className="text-gray-600 hover:text-blue-600 transition-colors"
+                >
                   Home
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/about" className="text-gray-600 hover:text-blue-600 transition-colors">
+                <NavLink
+                  to="/about"
+                  className="text-gray-600 hover:text-blue-600 transition-colors"
+                >
                   About
                 </NavLink>
               </li>
               <li>
-                <a href="https://wa.me/918431818662?text=Hi%20AutoLead%20team%2C%20I'm%20interested%20in%20your%20AI%20lead%20generation%20system!" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blue-600 transition-colors">
+                <a
+                  href="https://wa.me/918431818662?text=Hi%20AutoLead%20team%2C%20I'm%20interested%20in%20your%20AI%20lead%20generation%20system!"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-600 hover:text-blue-600 transition-colors"
+                >
                   Chat on WhatsApp
                 </a>
               </li>
@@ -64,15 +77,27 @@ const Footer = () => {
             © {new Date().getFullYear()} AutoLead Systems. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="#" className="text-gray-500 hover:text-blue-600 text-sm transition-colors">
+            {/* <a href="#" className="text-gray-500 hover:text-blue-600 text-sm transition-colors">
               Privacy Policy
             </a>
             <a href="#" className="text-gray-500 hover:text-blue-600 text-sm transition-colors">
               Terms of Service
-            </a>
+            </a> */}
+
+            <p className="text-gray-500 text-sm">
+              Deveoped by{" "}
+              <a
+                href="https://jwswebservices.netlify.app/"
+                target="_blank"
+                className="text-gray-500 hover:text-blue-600 text-sm transition-colors hover:underline"
+              >
+                JWS
+              </a>{" "}
+            </p>
           </div>
         </div>
       </div>
-    </footer>;
+    </footer>
+  );
 };
 export default Footer;
