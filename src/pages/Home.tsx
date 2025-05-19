@@ -8,7 +8,7 @@ import { Button } from '@/components/ui/button';
 const ServiceCard = ({ icon, title, description }) => {
   return (
     <div className="glassmorphism p-6 rounded-xl card-hover">
-      <div className="bg-green-500/10 text-green-500 p-3 rounded-full w-fit mb-4">
+      <div className="bg-blue-500/10 text-blue-500 p-3 rounded-full w-fit mb-4">
         {icon}
       </div>
       <h3 className="text-xl font-semibold text-white mb-2">{title}</h3>
@@ -21,7 +21,7 @@ const ServiceCard = ({ icon, title, description }) => {
 const FeatureCard = ({ icon, title, description }) => {
   return (
     <div className="flex space-x-4 items-start">
-      <div className="bg-green-500/10 text-green-500 p-3 rounded-full flex-shrink-0">
+      <div className="bg-blue-500/10 text-blue-500 p-3 rounded-full flex-shrink-0">
         {icon}
       </div>
       <div>
@@ -45,7 +45,7 @@ const Home = () => {
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col items-center text-center space-y-6 max-w-4xl mx-auto">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight animate-fade-in">
-              Turn Conversations into <span className="text-green-500">Paying Customers</span> — On Autopilot
+              Turn Conversations into <span className="text-blue-500">Paying Customers</span> — On Autopilot
             </h1>
             
             <p className="text-xl text-gray-300 max-w-2xl animate-fade-in animation-delay-100">
@@ -53,23 +53,15 @@ const Home = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 pt-4 animate-fade-in animation-delay-200">
-              <Button 
-                size="lg"
-                id="book-demo"
-                className="bg-green-500 hover:bg-green-600 text-white font-medium py-6 px-8 rounded-lg transition-all duration-300 flex items-center justify-center text-lg w-full sm:w-auto btn-glow"
+              <a 
+                href="https://wa.me/918431818662?text=Hi%20AutoLead%20team%2C%20I'm%20interested%20in%20your%20AI%20lead%20generation%20system!" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-blue-500 hover:bg-blue-600 text-white font-medium py-6 px-8 rounded-lg transition-all duration-300 flex items-center justify-center text-lg w-full sm:w-auto btn-glow"
               >
-                Book Free Demo
+                Chat on WhatsApp
                 <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-              
-              <Button 
-                variant="outline" 
-                size="lg"
-                id="free-trial"
-                className="bg-transparent border border-green-500 text-green-500 hover:bg-green-500/10 font-medium py-6 px-8 rounded-lg transition-all duration-300 flex items-center justify-center text-lg w-full sm:w-auto"
-              >
-                Start 1-Month Free Trial
-              </Button>
+              </a>
             </div>
           </div>
         </div>
@@ -106,8 +98,8 @@ const Home = () => {
             
             <FeatureCard 
               icon={<ShieldCheck size={24} />}
-              title="Free Trial, No Risk"
-              description="Start with a 1-month free trial to see the system in action. No contracts, no commitments, just real results you can measure."
+              title="Free Demo"
+              description="Start with a free demo to see the system in action. No contracts, no commitments, just real results you can measure."
             />
           </div>
         </div>
@@ -175,7 +167,7 @@ const Home = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="glassmorphism p-8 text-center card-hover">
-              <div className="bg-green-500/10 text-green-500 p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+              <div className="bg-blue-500/10 text-blue-500 p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                 <ShieldCheck size={28} />
               </div>
               <h3 className="text-xl font-semibold text-white mb-3">Privacy First</h3>
@@ -185,7 +177,7 @@ const Home = () => {
             </div>
             
             <div className="glassmorphism p-8 text-center card-hover">
-              <div className="bg-green-500/10 text-green-500 p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+              <div className="bg-blue-500/10 text-blue-500 p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                 <Cpu size={28} />
               </div>
               <h3 className="text-xl font-semibold text-white mb-3">AI Automation</h3>
@@ -195,7 +187,7 @@ const Home = () => {
             </div>
             
             <div className="glassmorphism p-8 text-center card-hover">
-              <div className="bg-green-500/10 text-green-500 p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+              <div className="bg-blue-500/10 text-blue-500 p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                 <BarChart3 size={28} />
               </div>
               <h3 className="text-xl font-semibold text-white mb-3">Growth Focused</h3>
@@ -213,24 +205,18 @@ const Home = () => {
           <div className="glassmorphism p-10 md:p-16 rounded-xl text-center">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6">Ready to Automate Your Customer Acquisition?</h2>
             <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-              Get started with our no-risk, 1-month free trial. No credit card required.
+              Chat with us on WhatsApp to learn more about how we can help your business grow.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button 
-                size="lg"
-                className="bg-green-500 hover:bg-green-600 text-white font-medium py-6 px-8 rounded-lg transition-all duration-300 flex items-center justify-center text-lg btn-glow"
+            <div className="flex justify-center">
+              <a 
+                href="https://wa.me/918431818662?text=Hi%20AutoLead%20team%2C%20I'm%20interested%20in%20your%20AI%20lead%20generation%20system!" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-blue-500 hover:bg-blue-600 text-white font-medium py-6 px-8 rounded-lg transition-all duration-300 flex items-center justify-center text-lg btn-glow"
               >
-                Book Free Demo
+                Chat on WhatsApp
                 <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-              
-              <Button 
-                variant="outline" 
-                size="lg"
-                className="bg-transparent border border-green-500 text-green-500 hover:bg-green-500/10 font-medium py-6 px-8 rounded-lg transition-all duration-300 flex items-center justify-center text-lg"
-              >
-                Start 1-Month Free Trial
-              </Button>
+              </a>
             </div>
           </div>
         </div>

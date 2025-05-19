@@ -34,11 +34,11 @@ export default {
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				psyco: {
-					green: {
-						DEFAULT: '#10B981', // Primary green
-						light: '#34D399', // Lighter green
-						dark: '#059669', // Darker green
-						muted: 'rgba(16, 185, 129, 0.1)' // Transparent green for backgrounds
+					blue: {
+						DEFAULT: '#3B82F6', // Primary blue
+						light: '#60A5FA', // Lighter blue
+						dark: '#2563EB', // Darker blue
+						muted: 'rgba(59, 130, 246, 0.1)' // Transparent blue for backgrounds
 					},
 					black: {
 						DEFAULT: '#121212', // Deep black
@@ -102,8 +102,8 @@ export default {
 					'100%': { transform: 'translateX(0)', opacity: '1' }
 				},
 				'pulse-glow': {
-					'0%, 100%': { boxShadow: '0 0 10px rgba(16, 185, 129, 0.4)' },
-					'50%': { boxShadow: '0 0 20px rgba(16, 185, 129, 0.7)' }
+					'0%, 100%': { boxShadow: '0 0 10px rgba(59, 130, 246, 0.4)' },
+					'50%': { boxShadow: '0 0 20px rgba(59, 130, 246, 0.7)' }
 				},
 				'float': {
 					'0%, 100%': { transform: 'translateY(0px)' },

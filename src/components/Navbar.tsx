@@ -40,7 +40,7 @@ const Navbar = () => {
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <NavLink to="/" className="flex items-center">
-          <div className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-green-500">
+          <div className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-500">
             AutoLead Systems
           </div>
         </NavLink>
@@ -53,8 +53,8 @@ const Navbar = () => {
               to={link.path}
               className={({ isActive }) =>
                 cn(
-                  'text-white hover:text-green-400 transition-colors duration-300 link-hover text-sm font-medium tracking-wide',
-                  isActive && 'text-green-500 after:w-full'
+                  'text-white hover:text-blue-400 transition-colors duration-300 link-hover text-sm font-medium tracking-wide',
+                  isActive && 'text-blue-500 after:w-full'
                 )
               }
             >
@@ -62,16 +62,18 @@ const Navbar = () => {
             </NavLink>
           ))}
           <a 
-            href="#book-demo" 
-            className="bg-green-500 hover:bg-green-600 text-white font-medium py-2 px-4 rounded-lg text-sm transition-colors"
+            href="https://wa.me/918431818662?text=Hi%20AutoLead%20team%2C%20I'm%20interested%20in%20your%20AI%20lead%20generation%20system!"
+            target="_blank" 
+            className="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-lg text-sm transition-colors"
+            rel="noopener noreferrer"
           >
-            Book Free Demo
+            Chat on WhatsApp
           </a>
         </div>
 
         {/* Mobile Navigation Toggle */}
         <button
-          className="md:hidden text-white hover:text-green-400 transition-colors"
+          className="md:hidden text-white hover:text-blue-400 transition-colors"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -92,8 +94,8 @@ const Navbar = () => {
               to={link.path}
               className={({ isActive }) =>
                 cn(
-                  'text-white hover:text-green-400 py-2 text-xl transition-colors duration-300',
-                  isActive && 'text-green-500'
+                  'text-white hover:text-blue-400 py-2 text-xl transition-colors duration-300',
+                  isActive && 'text-blue-500'
                 )
               }
             >
@@ -101,10 +103,12 @@ const Navbar = () => {
             </NavLink>
           ))}
           <a 
-            href="#book-demo" 
-            className="bg-green-500 hover:bg-green-600 text-white font-medium py-3 px-6 rounded-lg text-center mt-4"
+            href="https://wa.me/918431818662?text=Hi%20AutoLead%20team%2C%20I'm%20interested%20in%20your%20AI%20lead%20generation%20system!" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="bg-blue-500 hover:bg-blue-600 text-white font-medium py-3 px-6 rounded-lg text-center mt-4"
           >
-            Book Free Demo
+            Chat on WhatsApp
           </a>
         </div>
       </div>
