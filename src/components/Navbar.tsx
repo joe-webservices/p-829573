@@ -75,6 +75,7 @@ const Navbar = () => {
         <button
           className="md:hidden text-gray-700 hover:text-blue-600 transition-colors"
           onClick={() => setIsOpen(!isOpen)}
+          aria-label={isOpen ? "Close menu" : "Open menu"}
         >
           {isOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
@@ -88,6 +89,14 @@ const Navbar = () => {
         )}
       >
         <div className="flex flex-col space-y-4">
+          <button 
+            className="absolute top-6 right-6 text-gray-700 hover:text-blue-600"
+            onClick={() => setIsOpen(false)}
+            aria-label="Close menu"
+          >
+            <X size={24} />
+          </button>
+          
           {navLinks.map((link) => (
             <NavLink
               key={link.path}
