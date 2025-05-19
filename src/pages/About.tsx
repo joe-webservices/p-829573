@@ -1,17 +1,13 @@
-
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, BarChart3, Check, Shield, Zap } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-
 const About = () => {
   // Scroll to top on page load
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  return (
-    <div className="pt-24">
+  return <div className="pt-24">
       {/* Hero Section */}
       <section className="py-16 md:py-24 px-6 md:px-12">
         <div className="max-w-7xl mx-auto">
@@ -106,7 +102,7 @@ const About = () => {
             <div className="md:w-1/2">
               <div className="glassmorphism p-8 rounded-xl h-full flex flex-col justify-center">
                 <div className="bg-green-500/10 text-green-500 p-4 w-16 h-16 flex items-center justify-center rounded-full mb-6">
-                  <Zap size={28} />
+                  <Zap size={28} className="bg-sky-100" />
                 </div>
                 <h3 className="text-2xl font-semibold text-white mb-4">Simple. Effective. Focused.</h3>
                 <p className="text-gray-300">
@@ -174,20 +170,13 @@ const About = () => {
               Get started with our no-risk, 1-month free trial and see the results for yourself.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button 
-                size="lg"
-                className="bg-green-500 hover:bg-green-600 text-white font-medium py-6 px-8 rounded-lg transition-all duration-300 flex items-center justify-center text-lg btn-glow"
-              >
+              <Button size="lg" className="bg-green-500 hover:bg-green-600 text-white font-medium py-6 px-8 rounded-lg transition-all duration-300 flex items-center justify-center text-lg btn-glow">
                 Book Free Demo
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
               
               <Link to="/">
-                <Button 
-                  variant="outline" 
-                  size="lg"
-                  className="bg-transparent border border-green-500 text-green-500 hover:bg-green-500/10 font-medium py-6 px-8 rounded-lg transition-all duration-300 flex items-center justify-center text-lg"
-                >
+                <Button variant="outline" size="lg" className="bg-transparent border border-green-500 text-green-500 hover:bg-green-500/10 font-medium py-6 px-8 rounded-lg transition-all duration-300 flex items-center justify-center text-lg">
                   Explore Our Services
                 </Button>
               </Link>
@@ -195,8 +184,6 @@ const About = () => {
           </div>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 };
-
 export default About;
