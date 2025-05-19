@@ -41,9 +41,9 @@ export default {
 						muted: 'rgba(59, 130, 246, 0.1)' // Transparent blue for backgrounds
 					},
 					black: {
-						DEFAULT: '#121212', // Deep black
-						light: '#1E1E1E', // Lighter black
-						card: 'rgba(30, 30, 30, 0.7)' // Semi-transparent black for cards
+						DEFAULT: '#FFFFFF', // Now white for light theme
+						light: '#F8FAFC', // Very light blue/gray
+						card: 'rgba(248, 250, 252, 0.7)' // Semi-transparent light background for cards
 					}
 				},
 				primary: {
