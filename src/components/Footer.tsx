@@ -87,7 +87,7 @@ const Footer = () => {
             <p className="text-gray-500 text-sm">
               Deveoped by{" "}
               <a
-                href="https://jwswebservices.netlify.app/"
+                href="https://joewebservices.netlify.app/"
                 target="_blank"
                 className="text-gray-500 hover:text-blue-600 text-sm transition-colors hover:underline"
               >
